@@ -1,0 +1,444 @@
+:root {
+  --main-color: rgba(63, 63, 63, 1);
+  --main-hover-color: rgba(63, 63, 63, 0.85);
+
+  --bg-color: rgba(228, 234, 245, 1);
+  --bg-secondary-color: rgba(255, 255, 255, 1);
+
+  --black: #000000;
+
+  --primary-color: rgba(102, 16, 242, 1);
+  --primary-hover-color: rgba(102, 16, 242, 0.9);
+
+  /* --admin-nav-color: #5161ce; */
+
+  --card1-color: #9cf6f6;
+  --card2-color: #f7f06d;
+  --card3-color: #feefdd;
+  --card4-color: #d4afcd;
+  --card5-color: #06d6a0;
+  --card6-color: #ff8200;
+
+  --danger: #DC3545;
+
+  --instgarm: #e4405f;
+  --facebook: #3b5999;
+  --github: #222222;
+  --youtube: #cd201f;
+  --linkedin: #0077b5;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 8px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  outline: none !important;
+}
+
+/* ########## NAVBAR DESIGN ########## */
+
+.navbar {
+  background-color: var(--bg-secondary-color);
+  background-color: var(--bg-color);
+  padding-top: 15px;
+}
+
+.nav-btn .btn-login {
+  background-color: var(--primary-color);
+  color: var(--bg-secondary-color);
+  border-color: var(--primary-color);
+}
+.nav-btn .btn-login:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.nav-btn .btn-signup {
+  background-color: transparent;
+  color: var(--main-color);
+  border-color: var(--primary-color);
+}
+.nav-btn .btn-signup:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-secondary-color);
+}
+
+/* ########## HOME DESIGN ########## */
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.home .left,
+.home .right {
+  flex: 1;
+}
+
+.home .left .btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.home .left .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.home .right {
+  height: 80%;
+}
+
+.home .right img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ########## ABOUT US DESIGN ########## */
+
+.about {
+  margin: 80px 0;
+  padding: 40px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+.about p {
+  margin-top: 20px;
+  padding: 10px 30px 20px 30px;
+  text-align: justify;
+  text-transform: none;
+}
+
+/* ########## TEAM SECTION DESIGN ########## */
+
+.faq {
+  background-color: var(--bg-secondary-color);
+  margin: 80px 0;
+  padding: 80px 20px;
+}
+.faq .container {
+  width: 75%;
+}
+
+.faq .accordion-button {
+  background-color: var(--bg-secondary-color);
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.faq .accordion-item {
+  border-color: var(--hover-color);
+}
+.faq .accordion-body {
+  text-transform: none;
+}
+
+/* ########## TEAM SECTION DESIGN ########## */
+
+.team {
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  margin: 80px 0;
+}
+.team .carousel-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team .carousel-item p,
+.team .carousel-item h4 {
+  text-align: justify;
+  margin: 10px 30px;
+}
+
+.team .carousel-item img {
+  width: 25%;
+  border-radius: 100%;
+}
+
+/* ########## TIME DESIGN ########## */
+
+.time {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time .left {
+  letter-spacing: 2px;
+}
+.time .admin {
+  margin-bottom: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+/* ########## CONTACT DESIGN ########## */
+
+.contact {
+  margin: 80px auto;
+  width: 75%;
+}
+
+.contact input,
+.contact input:focus,
+.contact textarea,
+.contact textarea:focus,
+.contact select {
+  background-color: var(--bg-color);
+  outline: none !important;
+}
+.contact .btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 8px;
+}
+
+.contact .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  padding: 8px;
+}
+
+/* ########## FOOTER DESIGN ########## */
+
+.footer {
+  border-top: 1px solid var(--main-color);
+  background-color: var(--bg-secondary-color);
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.footer .items .footer-item .link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.footer .items .footer-item .mail {
+  text-transform: lowercase;
+}
+
+.footer .items .footer-item .btn-buy {
+  background-color: var(--primary-color);
+  color: var(--bg-secondary-color);
+  border-color: var(--primary-color);
+}
+.footer .items .footer-item .btn-buy:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.footer .copyright .name {
+  color: var(--primary-color);
+}
+
+/* ########## AUTHENTICATION DESIGN ########## */
+
+.auth .btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.auth .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.auth .link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.admin-auth {
+  width: 50%;
+}
+
+.admin-auth input,
+.admin-auth input:focus {
+  background-color: var(--bg-color);
+  outline: none !important;
+}
+
+/* ########## PROFILE DESIGN ########## */
+
+.profile {
+  width: 50%;
+}
+
+.profile .btn-outline-primary {
+  width: 48%;
+  float: left;
+}
+.profile .btn-outline-danger {
+  border-color: var(--danger);
+  width: 48%;
+  float: right;
+}
+
+.profile input,
+.profile input:focus,
+.profile input:disabled {
+  background-color: var(--bg-color);
+}
+
+/* ########## ADMIN DESIGN ########## */
+
+.navbar-logo {
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-logo:hover {
+  color: var(--main-hover-color);
+}
+.navbar-mainbg {
+  background-color: var(--primary-color);
+  padding: 0px;
+}
+
+.admin-nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 20px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+
+.fa {
+  margin-right: 5px;
+  transition: transform 0.6s ease-in-out;
+}
+.fa:hover {
+  transform: rotate(360deg);
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  place-items: center;
+}
+
+.card {
+  box-shadow: 12px 12px 14px 0 var(--main-hover-color);
+  border-radius: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 2px 0 var(--main-hover-color);
+  border-radius: 5px;
+}
+
+.card-link,
+.card-link:hover {
+  color: var(--main-color);
+}
+
+#c1 {
+  background-color: var(--card1-color);
+}
+#c2 {
+  background-color: var(--card2-color);
+}
+#c3 {
+  background-color: var(--card3-color);
+}
+#c4 {
+  background-color: var(--card4-color);
+}
+#c5 {
+  background-color: var(--card5-color);
+}
+#c6 {
+  background-color: var(--card6-color);
+}
+
+/* ########## RESPONSIVENESS ########## */
+
+@media screen and (max-width: 768px) {
+  .home,
+  .team .carousel-item {
+    flex-direction: column;
+  }
+  .home .left {
+    margin-top: 100px;
+  }
+  .faq .container {
+    width: 100%;
+  }
+  .team .carousel-item img {
+    width: 50%;
+  }
+  .team .carousel-item p,
+  .team .carousel-item h4 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .time {
+    flex-direction: row-reverse;
+  }
+  .footer .items {
+    flex-direction: column;
+  }
+  .contact {
+    width: 100%;
+  }
+  .auth {
+    width: 90%;
+  }
+  .auth p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .profile {
+    width: 100%;
+  }
+  .profile .btn-outline-primary {
+    width: 40%;
+  }
+  .profile .btn-outline-danger {
+    width: 55%;
+  }
+  .admin-auth {
+    width: 90%;
+  }
+  .admin-nav ul{
+    margin-left: 20px !important;
+  }
+  .card-row {
+    grid-template-columns: auto;
+    grid-gap: 50px;
+  }
+  .table-responsive, .table-responsive .btn-outline-success{
+    font-size: 8px;
+  }
+  .table-responsive .btn-outline-success{
+    padding: 5px 10px;
+  }
+}
