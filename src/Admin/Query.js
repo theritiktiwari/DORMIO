@@ -58,7 +58,7 @@ const Query = () => {
                                     <th class="text-center" scope="col">Action</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody style={{textTransform: "none"}}>
                                 {queries.map((query, index) => {
                                     return (
                                         <tr>

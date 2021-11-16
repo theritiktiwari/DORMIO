@@ -43,8 +43,7 @@ const Users = () => {
 
                                 </tr>
                             </thead>
-                            <tbody>
-                                {/* <tr> */}
+                            <tbody style={{textTransform: "none"}}>
                                     {users.map((user, index) => {
                                         return (
                                             <tr>
@@ -56,17 +55,6 @@ const Users = () => {
                                             </tr>
                                         )
                                     })}
-                                    {/* <th className='text-center' scope='row'>" . $i ."</th>
-                                    <td className='text-center'>{users.name}</td>
-                                    <td className='text-center'>theritiktiwari@gmail.com</td>
-                                    <td className='text-center'>10/11/2021, 16:51:33</td> */}
-
-                                    {/* <td className="d-flex justify-content-center align-items-center">
-                                        <button className='btn btn-outline-primary mx-2 my-2' data-bs-toggle='modal' data-bs-target='#editUserModal" . $iid . "'>EDIT</button>
-                                        <button className='delete btn btn-danger' id='del" . $iid . "'>DELETE</button>
-                                    </td> */}
-                                {/* </tr> */}
-
                             </tbody>
                         </table>
                     </div>

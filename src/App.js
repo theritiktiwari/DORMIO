@@ -38,7 +38,7 @@ const App = () => {
           </Route>
           <Route exact path="/buy">
             <Navbar title={title} user={user} />
-            {user && <Buy user={user} />}
+            {user && <Buy user={user} title={title} />}
             {!user && <h1 className="text-center position-absolute top-50 start-50 translate-middle">Please login to buy</h1>}
           </Route>
           <Route exact path="/dashboard">

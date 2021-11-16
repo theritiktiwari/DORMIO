@@ -5,12 +5,8 @@
   --bg-color: rgba(228, 234, 245, 1);
   --bg-secondary-color: rgba(255, 255, 255, 1);
 
-  --black: #000000;
-
   --primary-color: rgba(102, 16, 242, 1);
   --primary-hover-color: rgba(102, 16, 242, 0.9);
-
-  /* --admin-nav-color: #5161ce; */
 
   --card1-color: #9cf6f6;
   --card2-color: #f7f06d;
@@ -19,13 +15,7 @@
   --card5-color: #06d6a0;
   --card6-color: #ff8200;
 
-  --danger: #DC3545;
-
-  --instgarm: #e4405f;
-  --facebook: #3b5999;
-  --github: #222222;
-  --youtube: #cd201f;
-  --linkedin: #0077b5;
+  --danger: #dc3545;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -103,17 +93,22 @@ body {
 
 .home .right {
   height: 80%;
+  display: flex;
+  justify-content: center;
 }
 
 .home .right img {
   height: 100%;
-  width: 100%;
+  transform: rotate(-10deg);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
 /* ########## ABOUT US DESIGN ########## */
 
 .about {
-  margin: 80px 0;
+  width: 80%;
+  margin: 80px auto;
   padding: 40px 20px 20px 20px;
   border-radius: 10px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
@@ -150,6 +145,35 @@ body {
   text-transform: none;
 }
 
+/* ########## MANUAL SECTION DESIGN ########## */
+
+.manual .btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--bg-secondary-color);
+  margin: 0 20px;
+}
+.manual .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.manual .manualBtn .arrow {
+  font-size: 30px;
+}
+.manual .textBox {
+  width: 85%;
+  margin: 0 auto;
+}
+.manual .image img {
+  margin: 10px 20px;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.25);
+}
+.manual .image img:last-child {
+  transform: scaleX(-1);
+}
+
 /* ########## TEAM SECTION DESIGN ########## */
 
 .team {
@@ -169,6 +193,19 @@ body {
 .team .carousel-item h4 {
   text-align: justify;
   margin: 10px 30px;
+  text-transform: none;
+}
+
+.team .carousel-item a {
+  margin: 10px 30px;
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: transparent;
+  border-color: var(--primary-color);
+}
+.team .carousel-item a:hover {
+  color: var(--bg-secondary-color);
+  background-color: var(--primary-color);
 }
 
 .team .carousel-item img {
@@ -387,10 +424,38 @@ body {
     flex-direction: column;
   }
   .home .left {
-    margin-top: 100px;
+    margin-top: 60px;
+  }
+  .home .right {
+    margin-top: 40px;
+  }
+  .home .right img {
+    height: 60%;
+  }
+  .about {
+    width: 100%;
   }
   .faq .container {
     width: 100%;
+  }
+  .manual .manualBtn {
+    flex-direction: column;
+  }
+  .manual .manualBtn .btn {
+    width: 100%;
+  }
+  .manual .manualBtn .arrow {
+    transform: rotate(90deg);
+  }
+  .manual .image {
+    flex-direction: column;
+  }
+  .manual .image img {
+    width: 85vw;
+    height: auto;
+  }
+  .manual .image img:last-child {
+    display: none;
   }
   .team .carousel-item img {
     width: 50%;
@@ -399,6 +464,13 @@ body {
   .team .carousel-item h4 {
     width: 100%;
     margin-left: 0;
+  }
+  .team .carousel-item h4 {
+    text-align: center;
+  }
+  .team .carousel-item a {
+    margin-left: 0;
+    margin-bottom: 60px;
   }
   .time {
     flex-direction: row-reverse;
@@ -428,17 +500,18 @@ body {
   .admin-auth {
     width: 90%;
   }
-  .admin-nav ul{
+  .admin-nav ul {
     margin-left: 20px !important;
   }
   .card-row {
     grid-template-columns: auto;
     grid-gap: 50px;
   }
-  .table-responsive, .table-responsive .btn-outline-success{
+  .table-responsive,
+  .table-responsive .btn-outline-success {
     font-size: 8px;
   }
-  .table-responsive .btn-outline-success{
+  .table-responsive .btn-outline-success {
     padding: 5px 10px;
   }
 }

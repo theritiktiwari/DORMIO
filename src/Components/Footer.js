@@ -16,7 +16,6 @@ const Footer = (props) => {
                     <div className="footer-item pt-5">
                         <h3>Site Links</h3>
                         <ul className="d-flex flex-column list-unstyled">
-                            <li><Link to="/" className="link">Home</Link></li>
                             <li><Link to="/manual" className="link">Manual</Link></li>
                             <li><a href="/#about" className="link">About Us</a></li>
                             <li><Link to="/buy" className="link">Buy Now</Link></li>

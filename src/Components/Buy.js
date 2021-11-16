@@ -59,8 +59,7 @@ const Buy = (props) => {
     }
     return (
         <>
-            {/* <h1 className="text-center position-absolute top-50 start-50 translate-middle">Product is not avalaible</h1> */}
-            <h1 className="text-center my-4 px-2">{props.title} is not avalaible</h1>
+            {/* <h1 className="text-center my-4 px-2">{props.title} isn't available right now. </h1><br /><h3 className="fs-3 text-center text-danger">Coming Soon</h3> */}
             <div className="container contact" id="contact">
                 <div className="container">
                     <h2 className="text-center my-4">Delivery Details</h2>

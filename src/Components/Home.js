@@ -15,7 +15,7 @@ const Home = (props) => {
                 <div className="container home" id="home">
                     <div className="left">
                         <h1>Welcome to {props.title} Store</h1>
-                        <p className="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem!</p>
+                        <p className="my-4">Sleep before you scroll</p>
                         <Link to="/buy" className="btn btn-primary">BUY NOW</Link>
                     </div>
                     <div className="right">
